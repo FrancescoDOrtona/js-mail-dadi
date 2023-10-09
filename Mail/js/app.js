@@ -3,6 +3,7 @@
 
 const emailDOMElement = document.getElementById('email');
 const btnDOMElement = document.getElementById('send-email');
+const responseDOMElement = document.querySelector('.response');
 
 // - Dichiaro una variabile con un array delle email consentite
 const allowedEmails = ['batman@ghotam.com', 'peterparker@spiderman.com', 'luffy@onepiece.com', 'tanjiro@demonslayer.com', 'gojo@satoru.jp', 'akame@nightraid.jp'];
@@ -18,9 +19,11 @@ btnDOMElement.addEventListener('click', function(){
 
     for(i = 0; i < arrayLenght; i++){
         if(email === allowedEmails[i]){
-            console.log('Accesso Consentito')
+            
+            responseDOMElement.innerHTML = 'Accesso Consentito'
+            
         } else 
-        console.log('Accesso Negato')
+            responseDOMElement.innerHTML = 'Accesso Negato' 
         
     
         
