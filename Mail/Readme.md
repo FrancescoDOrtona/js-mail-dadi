@@ -1,0 +1,13 @@
+# Email
+- Chiedo all'utente l'email
+    - creo un elemento di input html in cui l'utente inserirà l'email
+    - dichiaro una variabile per l'email inserita 
+    - recupero tramite id il valore inserito
+- Dichiaro una variabile con un array delle email consentite
+    - creo un array con le email consentite dichiarandone una variabile
+- Dichiaro un ciclo for che controllerà l'email inserita dall'utente se consente l'accesso
+    - il ciclo for avrà (let i = 0; i < lunghezzaArray; i++> )
+    - SE email utente === email consentita 
+        - allora stamperò " Accesso consentito"
+    - ALTRIMENTI 
+        - stamperò "Accesso negato"
