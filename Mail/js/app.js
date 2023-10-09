@@ -15,14 +15,19 @@ console.log(arrayLenght);
 // - Dichiaro un ciclo for che al click controllerà l'email inserita dall'utente se consente l'accesso
 btnDOMElement.addEventListener('click', function(){
     const email = emailDOMElement.value;
+    let emailFound = false; 
     console.log(typeof(email),email, emailDOMElement);
 
     for(i = 0; i < arrayLenght; i++){
         if(email === allowedEmails[i]){
-            
-            responseDOMElement.innerHTML = 'Accesso Consentito';
-            
-        } else 
-            responseDOMElement.innerHTML = 'Accesso Negato';        
+            emailFound = true;
+            console.log('Accesso consentito')
+        }               
+    }
+    
+    if(emailFound === true){
+        responseDOMElement.innerHTML = 'Accesso Consentito';
+    }else{
+        responseDOMElement.innerHTML = 'Accesso Negato';
     }
 })
