@@ -5,7 +5,7 @@
     - recupero tramite id il valore inserito
 - Dichiaro una variabile con un array delle email consentite
     - creo un array con le email consentite dichiarandone una variabile
-- Dichiaro un ciclo for che controllerà l'email inserita dall'utente se consente l'accesso
+- Dichiaro un ciclo for che al click controllerà l'email inserita dall'utente se consente l'accesso
     - il ciclo for avrà (let i = 0; i < lunghezzaArray; i++> )
     - SE email utente === email consentita 
         - allora stamperò " Accesso consentito"
