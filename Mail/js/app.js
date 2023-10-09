@@ -20,12 +20,9 @@ btnDOMElement.addEventListener('click', function(){
     for(i = 0; i < arrayLenght; i++){
         if(email === allowedEmails[i]){
             
-            responseDOMElement.innerHTML = 'Accesso Consentito'
+            responseDOMElement.innerHTML = 'Accesso Consentito';
             
         } else 
-            responseDOMElement.innerHTML = 'Accesso Negato' 
-        
-    
-        
+            responseDOMElement.innerHTML = 'Accesso Negato';        
     }
 })
